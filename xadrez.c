@@ -40,6 +40,26 @@ int main() {
 
     return 0;
 }
+#include <stdio.h>
+
+int main() {
+    // Definição das quantidades de casas para cada direção
+    int passosBaixo = 2;     // Duas casas para baixo
+    int passosEsquerda = 1;  // Uma casa para a esquerda
+
+    // Impressão do movimento do Cavalo separado por uma linha em branco
+    printf("\nMovimento do Cavalo:\n\n");
+
+    // Primeiro loop: movimentar o Cavalo duas vezes para baixo (loop for)
+    for (int i = 0; i < passosBaixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Segundo loop: movimentar o Cavalo uma vez para a esquerda (loop while)
+    int j = 0;
+    while (j < passosEsquerda) {
+        printf("Esquerda\n");
+        j++;
+    }
 
     return 0;
-}
